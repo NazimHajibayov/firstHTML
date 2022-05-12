@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        header {
+            display: flex;
+        }
+
+        main {
+            margin: 100px 10px;
+        }
+
+        .icon {
+            display: table;
+        }
+
+        .icon img,
+        .icon span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .header_text {
+            display: block;
+            margin-right: 15px;
+        }
+
+        p {
+            line-height: 0.5;
+            font-size: large;
+            color: rgb(0, 0, 0);
+        }
+
+        .My_projects_txt {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .project_one {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .search_form {
+            width: 400px;
+            margin: 15px;
+        }
+
+        input {
+            padding: 4px 10px;
+            border: 0;
+            font-size: 16px;
+        }
+
+        .search {
+            width: 75%;
+        }
+
+        .submit {
+            width: 70px;
+            background-color: #1c87c9;
+        }
+
+        body {
+            background: url(background.jpg) no-repeat;
+            background-size: 100%;
+        }
+
+        img {
+            border-radius: 100px;
+            margin-right: 400px;
+            opacity: 0.80;
+        }
+
+        .bold_Class {
+            font-size: x-large;
+            color: brown;
+        }
+        .footer_form {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+        .input_order {
+            margin: 2px;
+            border: 0.1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <a href="cart.html" class="icon">
+                <img src="user.svg" width="40" height="40" alt="go to profile">
+            </a>
+        </div>
+
+        <div class="header_text">
+            <p class="header_text">This site is <b class="bold_Class">Portfolio</b> of my Projects done.</p>
+            <p class="header_text">You can click on my projects and check below.</p>
+        </div>
+
+        <img src="project.jpg" alt="Project Image" width="180" class="projectImage">
+        <div>
+            <form class="search_form">
+                <input type="text" name="text" class="search" placeholder="Search here!">
+                <input type="submit" name="submit" class="submit" value="Search">
+            </form>
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <div class="My_projects_txt">
+                <h2 class="project_text">My Projects</h2>
+            </div>
+            <div class="project_one">
+                <a href="https://mcdonalds.com">
+                    <img src="mcdonalds.jpg" width="400" height="250" alt="Mcdonalds project">
+                </a>
+                <a href="https://uber.com">
+                    <img src="uber.jpg" width="400" height="250" alt="uber photo">
+                </a>
+                <a href="https://mercedes.com">
+                    <img src="mercedes.jpg" width="400" height="250" alt="mercedes photo">
+                </a>
+                <a href="https://toybox.com">
+                    <img src="toybox.jpg" width="400" height="250" alt="toybox photo">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <form class="footer_form">
+            <input type="text" placeholder="Name" class="input_order">
+            <input type="text" placeholder="Email" class="input_order">
+            <input type="text" placeholder="Message" class="input_order">
+            <input type="Submit" value="Submit" class="input_order">
+        </form>
+        <h5>Created by Nazim Hajibayov</h5>
+    </footer>
+</body>
+
+</html>
